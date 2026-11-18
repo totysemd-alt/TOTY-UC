@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>TOTY-UC | متجر الشحن</title>
+  <style>
+    :root{--bg:#09090b;--panel:#141416;--gold:#e7b94f;--gold2:#ffdc83;--muted:#b9b5aa;--line:#302817}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#282012 0,#09090b 48%);color:#fff;font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+    .wrap{width:min(1080px,92%);margin:auto}.top{padding:22px 0;border-bottom:1px solid #302817}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-weight:900;font-size:25px;letter-spacing:1px;color:var(--gold)}
+    .tag{color:var(--muted);font-size:13px}.hero{padding:76px 0 56px;text-align:center}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:5px 14px;color:var(--gold2);font-size:13px}
+    h1{font-size:clamp(34px,7vw,62px);line-height:1.2;margin:18px 0 12px}.gold{color:var(--gold)}.intro{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px}
+    .section{padding:26px 0 68px}.section h2{text-align:center;font-size:28px;margin:0 0 8px}.sub{text-align:center;color:var(--muted);margin:0 0 28px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:linear-gradient(145deg,#19191c,#101012);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;box-shadow:0 14px 35px #0005}
+    .icon{font-size:32px}.card h3{margin:8px 0;color:var(--gold2)}.card p{color:var(--muted);font-size:14px;min-height:48px}
+    .btn{display:inline-block;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17120a;text-decoration:none;font-weight:800;padding:11px 20px;border-radius:10px;border:0;cursor:pointer;font-size:15px}
+    .notice{margin:24px auto 0;max-width:760px;padding:14px 18px;border:1px solid var(--line);border-radius:12px;color:var(--muted);text-align:center;font-size:13px}
+    footer{border-top:1px solid var(--line);padding:22px 0;text-align:center;color:#8f8a80;font-size:13px}
+    @media(max-width:520px){.hero{padding:55px 0 40px}.nav{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap nav"><div class="logo">TOTY-UC</div><div class="tag">متجر الشحن والألعاب</div></div></header>
+  <main>
+    <section class="hero wrap">
+      <span class="pill">مرحباً بك في TOTY-UC</span>
+      <h1>اشحن لعبتك<br><span class="gold">بسهولة وثقة</span></h1>
+      <p class="intro">وجهتك لشحن الألعاب الرقمية. تصفّح الخدمات والباقات، وتواصل معنا لمعرفة الأسعار والتفاصيل قبل تأكيد أي طلب.</p>
+    </section>
+    <section class="section wrap">
+      <h2>خدمات المتجر</h2><p class="sub">اختار الخدمة اللي محتاجها</p>
+      <div class="grid">
+        <article class="card"><div class="icon">🎮</div><h3>شحن PUBG Mobile</h3><p>باقات شدات متنوعة حسب احتياجك.</p><button class="btn" onclick="contactNotice()">استفسر عن الباقات</button></article>
+        <article class="card"><div class="icon">⚡</div><h3>شحن الألعاب</h3><p>اسأل عن الألعاب والخدمات المتاحة حالياً.</p><button class="btn" onclick="contactNotice()">اعرف التفاصيل</button></article>
+        <article class="card"><div class="icon">🛡️</div><h3>دعم ومساعدة</h3><p>راجع تفاصيل طلبك وسياسة الخدمة قبل الدفع.</p><button class="btn" onclick="contactNotice()">تواصل معنا</button></article>
+      </div>
+      <div class="notice">تنبيه: هذه واجهة تعريفية مبدئية. لا تُدخل كلمات مرور أو بيانات بطاقات بنكية هنا، ولا تُرسل أي مبلغ قبل التأكد من تفاصيل الطلب ووسيلة التواصل الرسمية.</div>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> TOTY-UC — جميع الحقوق محفوظة</div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function contactNotice(){alert('سيتم إضافة وسيلة التواصل الرسمية بعد تأكيد بيانات المتجر. لا ترسل بيانات حسابك أو كلمة المرور لأي شخص.');}
+  </script>
+</body>
+</html>
