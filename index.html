@@ -1,53 +1,62 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0d">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <title>TOTY-UC | متجر الشحن</title>
-  <style>
-    :root{--bg:#09090b;--panel:#141416;--gold:#e7b94f;--gold2:#ffdc83;--muted:#b9b5aa;--line:#302817}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#282012 0,#09090b 48%);color:#fff;font-family:Tahoma,Arial,sans-serif;line-height:1.7}
-    .wrap{width:min(1080px,92%);margin:auto}.top{padding:22px 0;border-bottom:1px solid #302817}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-weight:900;font-size:25px;letter-spacing:1px;color:var(--gold)}
-    .tag{color:var(--muted);font-size:13px}.hero{padding:76px 0 56px;text-align:center}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:5px 14px;color:var(--gold2);font-size:13px}
-    h1{font-size:clamp(34px,7vw,62px);line-height:1.2;margin:18px 0 12px}.gold{color:var(--gold)}.intro{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px}
-    .section{padding:26px 0 68px}.section h2{text-align:center;font-size:28px;margin:0 0 8px}.sub{text-align:center;color:var(--muted);margin:0 0 28px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:linear-gradient(145deg,#19191c,#101012);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;box-shadow:0 14px 35px #0005}
-    .icon{font-size:32px}.card h3{margin:8px 0;color:var(--gold2)}.card p{color:var(--muted);font-size:14px;min-height:48px}
-    .btn{display:inline-block;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17120a;text-decoration:none;font-weight:800;padding:11px 20px;border-radius:10px;border:0;cursor:pointer;font-size:15px}
-    .notice{margin:24px auto 0;max-width:760px;padding:14px 18px;border:1px solid var(--line);border-radius:12px;color:var(--muted);text-align:center;font-size:13px}
-    footer{border-top:1px solid var(--line);padding:22px 0;text-align:center;color:#8f8a80;font-size:13px}
-    @media(max-width:520px){.hero{padding:55px 0 40px}.nav{align-items:flex-start;flex-direction:column}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>TOTY-UC | شحن PUBG Mobile</title>
+<style>
+:root{--ink:#172033;--muted:#687386;--line:#e7eaf0;--blue:#2563eb;--soft:#f6f8fc}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{width:min(1080px,92%);margin:auto}.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:25px;font-weight:900;letter-spacing:.5px;color:var(--blue)}.tag{font-size:13px;color:var(--muted)}
+.hero{text-align:center;padding:55px 0 35px}.pill{display:inline-block;background:#eff6ff;color:#1d4ed8;border-radius:30px;padding:5px 14px;font-size:13px;font-weight:bold}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.25;margin:15px 0 8px}.intro{color:var(--muted);max-width:620px;margin:auto}
+.section{padding:18px 0 55px}.section h2{text-align:center;font-size:26px;margin:0}.sub{text-align:center;color:var(--muted);margin:4px 0 25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{border:1px solid var(--line);border-radius:18px;padding:20px;background:#fff;box-shadow:0 7px 24px #1720330a;text-align:center}
+.uc{font-size:30px}.card h3{font-size:18px;margin:7px 0}.qty{color:var(--muted);font-size:14px}.price{font-size:25px;font-weight:900;color:var(--blue);margin:10px 0 14px}
+.btn{width:100%;border:0;border-radius:11px;padding:12px 16px;background:var(--blue);color:#fff;font-weight:bold;font-size:15px;cursor:pointer}.btn:hover{background:#1d4ed8}
+.order{margin:28px auto 0;max-width:650px;border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--soft)}
+.order h2{margin:0 0 8px;font-size:22px}.order p{color:var(--muted);font-size:14px;margin:0 0 15px}
+label{display:block;font-weight:bold;font-size:14px;margin:12px 0 5px}select{width:100%;padding:12px;border:1px solid #d7dce5;border-radius:10px;background:#fff;color:var(--ink);font:inherit}
+.notice{margin:18px auto 0;max-width:760px;padding:13px 16px;border:1px solid #dbeafe;background:#f8fbff;border-radius:12px;color:#46556d;font-size:13px}
+footer{border-top:1px solid var(--line);padding:20px 0;text-align:center;color:#8791a1;font-size:13px}
+@media(max-width:520px){.nav{height:62px}.tag{font-size:11px}.hero{padding-top:42px}.card{padding:17px}}
+</style>
 </head>
 <body>
-  <header class="top"><div class="wrap nav"><div class="logo">TOTY-UC</div><div class="tag">متجر الشحن والألعاب</div></div></header>
-  <main>
-    <section class="hero wrap">
-      <span class="pill">مرحباً بك في TOTY-UC</span>
-      <h1>اشحن لعبتك<br><span class="gold">بسهولة وثقة</span></h1>
-      <p class="intro">وجهتك لشحن الألعاب الرقمية. تصفّح الخدمات والباقات، وتواصل معنا لمعرفة الأسعار والتفاصيل قبل تأكيد أي طلب.</p>
-    </section>
-    <section class="section wrap">
-      <h2>خدمات المتجر</h2><p class="sub">اختار الخدمة اللي محتاجها</p>
-      <div class="grid">
-        <article class="card"><div class="icon">🎮</div><h3>شحن PUBG Mobile</h3><p>باقات شدات متنوعة حسب احتياجك.</p><button class="btn" onclick="contactNotice()">استفسر عن الباقات</button></article>
-        <article class="card"><div class="icon">🪙</div><h3>باقة UC60</h3><p>60 UC — السعر: <strong>59 جنيه</strong>.</p><button class="btn" onclick="contactNotice()">اطلب الباقة</button></article>
-        <article class="card"><div class="icon">🪙</div><h3>باقة UC325</h3><p>325 UC — السعر: <strong>260 جنيه</strong>.</p><button class="btn" onclick="contactNotice()">اطلب الباقة</button></article>
-        <article class="card"><div class="icon">⚡</div><h3>شحن الألعاب</h3><p>اسأل عن الألعاب والخدمات المتاحة حالياً.</p><button class="btn" onclick="contactNotice()">اعرف التفاصيل</button></article>
-        <article class="card"><div class="icon">🛡️</div><h3>دعم ومساعدة</h3><p>راجع تفاصيل طلبك وسياسة الخدمة قبل الدفع.</p><button class="btn" onclick="contactNotice()">تواصل معنا</button></article>
-      </div>
-      <div class="notice">تنبيه: هذه واجهة تعريفية مبدئية. لا تُدخل كلمات مرور أو بيانات بطاقات بنكية هنا، ولا تُرسل أي مبلغ قبل التأكد من تفاصيل الطلب ووسيلة التواصل الرسمية.</div>
-    </section>
-  </main>
-  <footer><div class="wrap">© <span id="year"></span> TOTY-UC — جميع الحقوق محفوظة</div></footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function contactNotice(){window.open('https://wa.me/201096073165?text='+encodeURIComponent('مرحباً، أريد الاستفسار عن باقات متجر TOTY-UC.'),'_blank','noopener');}
-  </script>
+<header class="top"><div class="wrap nav"><div class="logo">TOTY-UC</div><div class="tag">متجر شحن PUBG Mobile Global</div></div></header>
+<main>
+<section class="hero wrap">
+<span class="pill">شحن شدات PUBG Mobile Global</span>
+<h1>اختار باقتك <span style="color:#2563eb">وادفع بمحفظتك</span></h1>
+<p class="intro">كل الباقات وأسعارها واضحة قدامك. اختار عدد الشدات وطريقة الدفع، وبعدها ابعت طلبك للتأكيد عبر واتساب.</p>
+</section>
+<section class="section wrap">
+<h2>باقات UC</h2><p class="sub">الأسعار بالجنيه المصري — شاملة زيادة 25%</p>
+<div class="grid">
+<article class="card"><div class="uc">🪙</div><h3>PUBG Mobile Global</h3><div class="qty">60 UC</div><div class="price">61.70 ج.م</div><button class="btn" onclick="choose(0)">اطلب الباقة</button></article>
+<article class="card"><div class="uc">🪙</div><h3>PUBG Mobile Global</h3><div class="qty">325 UC</div><div class="price">311.01 ج.م</div><button class="btn" onclick="choose(1)">اطلب الباقة</button></article>
+<article class="card"><div class="uc">🪙</div><h3>PUBG Mobile Global</h3><div class="qty">660 UC</div><div class="price">622.66 ج.م</div><button class="btn" onclick="choose(2)">اطلب الباقة</button></article>
+<article class="card"><div class="uc">🪙</div><h3>PUBG Mobile Global</h3><div class="qty">1800 UC</div><div class="price">1,693.06 ج.م</div><button class="btn" onclick="choose(3)">اطلب الباقة</button></article>
+<article class="card"><div class="uc">🪙</div><h3>PUBG Mobile Global</h3><div class="qty">3850 UC</div><div class="price">3,149.74 ج.م</div><button class="btn" onclick="choose(4)">اطلب الباقة</button></article>
+<article class="card"><div class="uc">🪙</div><h3>PUBG Mobile Global</h3><div class="qty">8100 UC</div><div class="price">6,300.11 ج.م</div><button class="btn" onclick="choose(5)">اطلب الباقة</button></article>
+</div>
+<div class="order" id="order">
+<h2>تأكيد طلبك</h2><p>اختار الباقة وطريقة المحفظة، وسنفتح رسالة واتساب بتفاصيل طلبك.</p>
+<label for="package">الباقة</label><select id="package"><option value="0">60 UC — 61.70 جنيه</option><option value="1">325 UC — 311.01 جنيه</option><option value="2">660 UC — 622.66 جنيه</option><option value="3">1800 UC — 1,693.06 جنيه</option><option value="4">3850 UC — 3,149.74 جنيه</option><option value="5">8100 UC — 6,300.11 جنيه</option></select>
+<label for="wallet">طريقة الدفع</label><select id="wallet"><option>Vodafone Cash</option><option>e& Cash</option><option>Orange Cash</option><option>WE Pay</option><option>محفظة أخرى</option></select>
+<button class="btn" style="margin-top:16px" onclick="sendOrder()">إرسال الطلب عبر واتساب</button>
+</div>
+<div class="notice">مهم: الدفع هنا غير آلي؛ تواصل أولاً لتأكيد توفر الباقة واستلام بيانات المحفظة الرسمية. لا ترسل رقمك السري أو رمز OTP لأي شخص، ولا تحول أموالاً قبل التأكد بمساعدة ولي أمرك. لا نطلب كلمة مرور حساب PUBG.</div>
+</section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> TOTY-UC</div></footer>
+<script>
+const packages=[["60 UC","61.70"],["325 UC","311.01"],["660 UC","622.66"],["1800 UC","1693.06"],["3850 UC","3149.74"],["8100 UC","6300.11"]];
+function choose(i){document.getElementById('package').value=String(i);document.getElementById('order').scrollIntoView({behavior:'smooth',block:'center'});}
+function sendOrder(){const p=packages[Number(document.getElementById('package').value)];const w=document.getElementById('wallet').value;const msg='مرحباً، أريد طلب باقة PUBG Mobile Global '+p[0]+' بسعر '+p[1]+' جنيه. طريقة الدفع: '+w+'. برجاء تأكيد الطلب وبيانات الدفع الرسمية.';window.open('https://wa.me/201096073165?text='+encodeURIComponent(msg),'_blank','noopener');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
