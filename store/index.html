@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>TOTY UC | شحن PUBG Mobile</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--line:#e8ebf0;--blue:#246bfe;--bg:#f7f9fc}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+.wrap{width:min(1080px,92%);margin:auto}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;font-size:23px;letter-spacing:.3px}.brand span{color:var(--blue)}
+.pill{font-size:13px;color:#175cd3;background:#eff6ff;padding:8px 12px;border-radius:99px}
+.hero{padding:54px 0 28px;text-align:center}.hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 12px}.hero p{color:var(--muted);margin:0;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;padding:18px 0 44px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 22px #15294b08}
+.game{font-size:13px;color:var(--muted);font-weight:700}.uc{font-size:27px;font-weight:900;margin:10px 0 4px}.price{font-size:23px;color:var(--blue);font-weight:900}.old{font-size:13px;color:#98a2b3;text-decoration:line-through;margin-right:7px}
+.btn{border:0;border-radius:12px;background:var(--blue);color:#fff;font:inherit;font-weight:800;padding:12px 16px;width:100%;margin-top:16px;cursor:pointer}
+.info{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin:0 0 42px}.info h2{margin:0 0 10px;font-size:20px}.info p{color:var(--muted);line-height:1.8;margin:8px 0}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:22px;border-top:1px solid var(--line);background:#fff}
+#notice{display:none;background:#eff6ff;color:#1849a9;padding:14px;border-radius:12px;margin-top:14px;line-height:1.7}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">TOTY <span>UC</span></div><div class="pill">شحن PUBG Mobile Global</div></div></header>
+<main class="wrap">
+<section class="hero"><h1>اختار باقتك بسهولة</h1><p>أسعار واضحة وتجربة طلب بسيطة وآمنة</p></section>
+<section class="grid" aria-label="باقات الشحن">
+<article class="card"><div class="game">PUBG MOBILE GLOBAL</div><div class="uc">60 UC</div><div class="price">54.30 جنيه</div><button class="btn" onclick="choose('60 UC','54.30 جنيه')">اطلب الباقة</button></article>
+<article class="card"><div class="game">PUBG MOBILE GLOBAL</div><div class="uc">325 UC</div><div class="price">273.69 جنيه</div><button class="btn" onclick="choose('325 UC','273.69 جنيه')">اطلب الباقة</button></article>
+<article class="card"><div class="game">PUBG MOBILE GLOBAL</div><div class="uc">660 UC</div><div class="price">547.94 جنيه</div><button class="btn" onclick="choose('660 UC','547.94 جنيه')">اطلب الباقة</button></article>
+<article class="card"><div class="game">PUBG MOBILE GLOBAL</div><div class="uc">1800 UC</div><div class="price">1,489.90 جنيه</div><button class="btn" onclick="choose('1800 UC','1,489.90 جنيه')">اطلب الباقة</button></article>
+<article class="card"><div class="game">PUBG MOBILE GLOBAL</div><div class="uc">3850 UC</div><div class="price">2,771.77 جنيه</div><button class="btn" onclick="choose('3850 UC','2,771.77 جنيه')">اطلب الباقة</button></article>
+<article class="card"><div class="game">PUBG MOBILE GLOBAL</div><div class="uc">8100 UC</div><div class="price">5,544.10 جنيه</div><button class="btn" onclick="choose('8100 UC','5,544.10 جنيه')">اطلب الباقة</button></article>
+</section>
+<section class="info"><h2>الدفع بالمحفظة الإلكترونية</h2><p>بعد اختيار الباقة، هتظهر تفاصيل الطلب. لا تحوّل أي مبلغ قبل ما تتأكد من رقم المحفظة واسم المستلم من قناة المتجر الرسمية.</p><div id="notice" role="status"></div><p><strong>تنبيه:</strong> الدفع الإلكتروني غير مفعّل تلقائياً في الصفحة دي؛ لازم ربط بوابة دفع أو إضافة بيانات محفظة رسمية والتحقق من الطلبات قبل استقبال الأموال.</p></section>
+</main>
+<footer>© TOTY UC — جميع الحقوق محفوظة</footer>
+<script>
+function choose(bundle,price){
+ const n=document.getElementById('notice');
+ n.style.display='block';
+ n.textContent='طلبك: PUBG Mobile Global — '+bundle+' | السعر: '+price+'. احتفظ بالتفاصيل وتواصل مع المتجر من وسيلته الرسمية لتأكيد الطلب وطريقة الدفع.';
+ n.scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body></html>
