@@ -10,7 +10,8 @@
 *{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}
 .wrap{width:min(1080px,92%);margin:auto}.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
 .nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:25px;font-weight:900;letter-spacing:.5px;color:var(--blue)}.tag{font-size:13px;color:var(--muted)}
-.hero{text-align:center;padding:55px 0 35px}.pill{display:inline-block;background:#eff6ff;color:#1d4ed8;border-radius:30px;padding:5px 14px;font-size:13px;font-weight:bold}
+.banner{padding:22px 0 0}.banner img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 8px 28px #17203318}.banner-note{text-align:center;color:var(--muted);font-size:13px;margin:8px 0 0}
+.hero{text-align:center;padding:35px 0 35px}.pill{display:inline-block;background:#eff6ff;color:#1d4ed8;border-radius:30px;padding:5px 14px;font-size:13px;font-weight:bold}
 h1{font-size:clamp(30px,6vw,48px);line-height:1.25;margin:15px 0 8px}.intro{color:var(--muted);max-width:620px;margin:auto}
 .section{padding:18px 0 55px}.section h2{text-align:center;font-size:26px;margin:0}.sub{text-align:center;color:var(--muted);margin:4px 0 25px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{border:1px solid var(--line);border-radius:18px;padding:20px;background:#fff;box-shadow:0 7px 24px #1720330a;text-align:center}
@@ -21,12 +22,16 @@ h1{font-size:clamp(30px,6vw,48px);line-height:1.25;margin:15px 0 8px}.intro{colo
 label{display:block;font-weight:bold;font-size:14px;margin:12px 0 5px}select{width:100%;padding:12px;border:1px solid #d7dce5;border-radius:10px;background:#fff;color:var(--ink);font:inherit}
 .notice{margin:18px auto 0;max-width:760px;padding:13px 16px;border:1px solid #dbeafe;background:#f8fbff;border-radius:12px;color:#46556d;font-size:13px}
 footer{border-top:1px solid var(--line);padding:20px 0;text-align:center;color:#8791a1;font-size:13px}
-@media(max-width:520px){.nav{height:62px}.tag{font-size:11px}.hero{padding-top:42px}.card{padding:17px}}
+@media(max-width:520px){.nav{height:62px}.tag{font-size:11px}.hero{padding-top:30px}.card{padding:17px}.banner img{border-radius:12px}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap nav"><div class="logo">TOTY-UC</div><div class="tag">متجر شحن PUBG Mobile Global</div></div></header>
 <main>
+<section class="banner wrap">
+<img src="file_00000000bc7481f4ae66c76f7a49b8fa.png" alt="إعلان متجر TOTY-UC لشحن PUBG Mobile">
+<p class="banner-note">الأسعار المعتمدة وتفاصيل الطلب موجودة في قسم الباقات أدناه.</p>
+</section>
 <section class="hero wrap">
 <span class="pill">شحن شدات PUBG Mobile Global</span>
 <h1>اختار باقتك <span style="color:#2563eb">وادفع بمحفظتك</span></h1>
