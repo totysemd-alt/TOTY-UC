@@ -50,7 +50,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;text-align:center;color:#
 <div class="order" id="order">
 <h2>تأكيد طلبك</h2><p>اختار الباقة وطريقة المحفظة، وسنفتح رسالة واتساب بتفاصيل طلبك.</p>
 <label for="package">الباقة</label><select id="package"><option value="0">60 UC — 55.53 جنيه</option><option value="1">325 UC — 279.91 جنيه</option><option value="2">660 UC — 560.39 جنيه</option><option value="3">1800 UC — 1,523.75 جنيه</option><option value="4">3850 UC — 2,834.77 جنيه</option><option value="5">8100 UC — 5,670.10 جنيه</option></select>
-<label for="wallet">طريقة الدفع</label><select id="wallet"><option>Vodafone Cash</option><option>e& Cash</option><option>InstaPay</option><option>محفظة أخرى</option></select>
+<label for="playerId">معرّف اللاعب (Player ID)</label><input id="playerId" type="text" inputmode="numeric" placeholder="اكتب PUBG ID هنا" required style="width:100%;padding:12px;border:1px solid #d7dce5;border-radius:10px;background:#fff;color:var(--ink);font:inherit"><label for="wallet">طريقة الدفع</label><select id="wallet"><option>Vodafone Cash</option><option>e& Cash</option><option>InstaPay</option><option>محفظة أخرى</option></select>
 <button class="btn" style="margin-top:16px" onclick="sendOrder()">إرسال الطلب عبر واتساب</button>
 </div>
 <div class="notice">مهم: الدفع هنا غير آلي؛ تواصل أولاً لتأكيد توفر الباقة واستلام بيانات المحفظة الرسمية. لا ترسل رقمك السري أو رمز OTP لأي شخص، ولا تحول أموالاً قبل التأكد بمساعدة ولي أمرك. لا نطلب كلمة مرور حساب PUBG.</div>
@@ -60,7 +60,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;text-align:center;color:#
 <script>
 const packages=[["60 UC","55.53"],["325 UC","279.91"],["660 UC","560.39"],["1800 UC","1523.75"],["3850 UC","2834.77"],["8100 UC","5670.10"]];
 function choose(i){document.getElementById('package').value=String(i);document.getElementById('order').scrollIntoView({behavior:'smooth',block:'center'});}
-function sendOrder(){const p=packages[Number(document.getElementById('package').value)];const w=document.getElementById('wallet').value;const msg='مرحباً، أريد طلب باقة PUBG Mobile Global '+p[0]+' بسعر '+p[1]+' جنيه. طريقة الدفع: '+w+'. برجاء تأكيد الطلب وبيانات الدفع الرسمية.';window.open('https://wa.me/201096073165?text='+encodeURIComponent(msg),'_blank','noopener');}
+function sendOrder(){const p=packages[Number(document.getElementById('package').value)];const w=document.getElementById('wallet').value;const playerId=document.getElementById('playerId').value.trim();if(!playerId){alert('من فضلك اكتب PUBG ID أولاً');document.getElementById('playerId').focus();return;}const msg='مرحباً، أريد طلب باقة PUBG Mobile Global '+p[0]+' بسعر '+p[1]+' جنيه. PUBG ID: '+playerId+'. طريقة الدفع: '+w+'. برجاء تأكيد الطلب وبيانات الدفع الرسمية.';window.open('https://wa.me/201096073165?text='+encodeURIComponent(msg),'_blank','noopener');}
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
