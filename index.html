@@ -60,7 +60,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;text-align:center;color:#
 <script>
 const packages=[["60 UC","55.53"],["325 UC","279.91"],["660 UC","560.39"],["1800 UC","1523.75"],["3850 UC","2834.77"],["8100 UC","5670.10"]];
 function choose(i){document.getElementById('package').value=String(i);document.getElementById('order').scrollIntoView({behavior:'smooth',block:'center'});}
-function sendOrder(){const p=packages[Number(document.getElementById('package').value)];const w=document.getElementById('wallet').value;const playerId=document.getElementById('playerId').value.trim();if(!/^\\d{6,20}$/.test(playerId)){alert('من فضلك اكتب PUBG ID صحيحًا من 6 إلى 20 رقمًا، بدون مسافات أو حروف.');document.getElementById('playerId').focus();return;}const msg='مرحباً، أريد طلب باقة PUBG Mobile Global '+p[0]+' بسعر '+p[1]+' جنيه. PUBG ID: '+playerId+'. طريقة الدفع: '+w+'. برجاء تأكيد الطلب وبيانات الدفع الرسمية.';window.open('https://wa.me/201096073165?text='+encodeURIComponent(msg),'_blank','noopener');}
+function sendOrder(){const p=packages[Number(document.getElementById('package').value)];const w=document.getElementById('wallet').value;const playerId=document.getElementById('playerId').value.trim();if(!/^\d{6,20}$/.test(playerId)){alert('من فضلك اكتب PUBG ID صحيحًا من 6 إلى 20 رقمًا، بدون مسافات أو حروف.');document.getElementById('playerId').focus();return;}const msg='مرحباً، أريد طلب باقة PUBG Mobile Global '+p[0]+' بسعر '+p[1]+' جنيه. PUBG ID: '+playerId+'. طريقة الدفع: '+w+'. برجاء تأكيد الطلب وبيانات الدفع الرسمية.';window.open('https://wa.me/201096073165?text='+encodeURIComponent(msg),'_blank','noopener');}
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
