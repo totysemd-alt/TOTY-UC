@@ -6,5 +6,5 @@
 <text x="256" y="220" font-family="Arial,sans-serif" font-size="92" font-weight="900" text-anchor="middle" fill="#fff">TOTY</text>
 <text x="256" y="315" font-family="Arial,sans-serif" font-size="100" font-weight="900" text-anchor="middle" fill="url(#y)">UC</text>
 <path d="M105 385h302" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".8"/>
-<text x="256" y="435" font-family="Arial,sans-serif" font-size=" thirty" font-weight="700" text-anchor="middle" fill="#fff">STORE</text>
+<text x="256" y="435" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#fff">STORE</text>
 </svg>
