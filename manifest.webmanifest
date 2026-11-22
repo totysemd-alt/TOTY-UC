@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "TOTY UC Store",
+  "short_name": "TOTY UC",
+  "description": "متجر TOTY UC لشحن PUBG Mobile Global",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#160b2b",
+  "theme_color": "#241044",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
