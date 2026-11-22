@@ -3,7 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#241044">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#241044">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="TOTY UC Store">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+
 <title>TOTY-UC | شحن PUBG Mobile</title>
 <style>
 :root{--ink:#172033;--muted:#687386;--line:#e7eaf0;--blue:#2563eb;--soft:#f6f8fc}
@@ -62,6 +69,9 @@ const packages=[["60 UC","55.53"],["325 UC","279.91"],["660 UC","560.39"],["1800
 function choose(i){document.getElementById('package').value=String(i);document.getElementById('order').scrollIntoView({behavior:'smooth',block:'center'});}
 function sendOrder(){const p=packages[Number(document.getElementById('package').value)];const w=document.getElementById('wallet').value;const playerId=document.getElementById('playerId').value.trim();if(!/^\d{6,20}$/.test(playerId)){alert('من فضلك اكتب PUBG ID صحيحًا من 6 إلى 20 رقمًا، بدون مسافات أو حروف.');document.getElementById('playerId').focus();return;}const msg='مرحباً، أريد طلب باقة PUBG Mobile Global '+p[0]+' بسعر '+p[1]+' جنيه. PUBG ID: '+playerId+'. طريقة الدفع: '+w+'. برجاء تأكيد الطلب وبيانات الدفع الرسمية.';window.open('https://wa.me/201096073165?text='+encodeURIComponent(msg),'_blank','noopener');}
 document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+<script>
+if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(console.error)); }
 </script>
 </body>
 </html>
