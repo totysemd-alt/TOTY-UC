@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "TOTY UC Store",
-  "short_name": "TOTY UC",
-  "description": "متجر TOTY UC لشحن PUBG Mobile Global",
+  "name": "Toty UC Store",
+  "short_name": "Toty UC",
+  "description": "Toty UC Store لشحن PUBG Mobile Global",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./",
